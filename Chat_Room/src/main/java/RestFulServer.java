@@ -50,8 +50,5 @@ public class RestFulServer{
 
     public static void main(String[] progArgs){
         RestFulServer restfulServer = new RestFulServer();
-        while(true){
-
-        }
     }
 }
