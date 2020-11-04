@@ -6,8 +6,8 @@ JC = javac
 
 CLASSES = \
         RestfulServer.java \
-        .java \
-        .java \
+        chat_room.java \
+        
         
 
 default: classes
