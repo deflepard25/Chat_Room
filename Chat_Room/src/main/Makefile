@@ -5,7 +5,7 @@ JC = javac
         $(JC) $(JFLAGS) $*.java
 
 CLASSES = \
-        .java \
+        RestfulServer.java \
         .java \
         .java \
         
