@@ -51,6 +51,12 @@ public class RestfulServer{
                 + "\"protocol\":\""   + request.protocol()   +   "\",\n"
                 + "\"queryParams\":\""   + request.queryParams()   +   "\",\n"
                 + "\"requestMethod\":\""   + request.requestMethod()   +   "\",\n"
+                + "\"scheme\":\""   + request.scheme()  +   "\",\n"
+                + "\"servletPath\":\""   + request.servletPath()  +   "\",\n"
+                + "\"session\":\""   + request.session()  +   "\",\n"
+                + "\"uri()\":\""   + request.uri()  +   "\",\n"
+                + "\"url()\":\""   + request.url()  +   "\",\n"
+                + "\"userAgent\":\""   + request.userAgent()  +   "\",\n"
                 + "}";
     }
 
