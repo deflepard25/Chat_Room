@@ -4,13 +4,19 @@ import spark.Request;
 import spark.Response;
 import java.lang.System;
 import java.io.PrintStream;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 
-public class RestFulServer{
-    public RestFulServer(){
+public class RestfulServer{
+
+    private final Logger log = LoggerFactory.getLogger(RestfulServer.class);
+
+
+    public RestfulServer(){
         this.configureRestfulApiServer();
-
+        this.processRestfulApiRequests();
     }
 
     private void configureRestfulApiServer(){
@@ -49,7 +55,7 @@ public class RestFulServer{
     }
 
     public static void main(String[] progArgs){
-        RestFulServer restfulServer = new RestFulServer();
+        RestfulServer restfulServer = new RestfulServer();
         restfulServer.processRestfulApiRequests();
     }
 }
